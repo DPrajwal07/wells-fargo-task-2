@@ -5,9 +5,9 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.4</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
+        <version>3.2.5</version>
+        <relativePath/> </parent>   <!-- lookup parent from repository -->
+
     <groupId>com.wellsfargo</groupId>
     <artifactId>counselor</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -35,8 +35,14 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                <artificatId>maven-compiler-plugin</artificatId>
+                <version>4.0.0</version>
+                <configuration>
+                    <source>19</source>
+                    <target>19</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>
